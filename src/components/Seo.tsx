@@ -38,7 +38,10 @@ export function Seo() {
         addressLocality: 'Quezon City',
         addressCountry: 'PH',
       },
-      sameAs: [site?.facebook_url || 'https://www.facebook.com/profile.php?id=61594024377319'].filter(Boolean),
+      sameAs: [
+        site?.facebook_url || 'https://www.facebook.com/profile.php?id=61594024377319',
+        content.instagram_url || 'https://www.instagram.com/cvtravelandtours/',
+      ].filter(Boolean),
     }
 
     let script = document.getElementById('cv-jsonld')

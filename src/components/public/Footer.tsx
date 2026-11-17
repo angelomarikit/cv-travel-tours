@@ -1,15 +1,25 @@
 import { ArrowUp, MapPin, Phone } from 'lucide-react'
 import { BrandLogo } from '@/components/BrandLogo'
+import { useContent } from '@/contexts/ContentContext'
 import { useSite } from '@/contexts/SiteContext'
 import { formatPhoneDisplay, toViberLink } from '@/utils/phone'
 
 const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61594024377319'
+const INSTAGRAM_URL = 'https://www.instagram.com/cvtravelandtours/'
 const VIBER_NUMBER = '09669887477'
 
 function FacebookIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden="true">
       <path d="M22 12.07C22 6.48 17.52 2 11.93 2S1.86 6.48 1.86 12.07c0 4.99 3.64 9.13 8.4 9.93v-7.03H7.9v-2.9h2.36V9.84c0-2.33 1.38-3.62 3.5-3.62.99 0 2.03.18 2.03.18v2.24h-1.14c-1.13 0-1.48.7-1.48 1.42v1.7h2.52l-.4 2.9h-2.12V22c4.76-.8 8.4-4.94 8.4-9.93Z" />
+    </svg>
+  )
+}
+
+function InstagramIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden="true">
+      <path d="M12 7.2A4.8 4.8 0 1 0 12 16.8 4.8 4.8 0 0 0 12 7.2Zm0 7.92A3.12 3.12 0 1 1 12 8.88a3.12 3.12 0 0 1 0 6.24Zm6.3-8.16a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0Zm3.18 1.14c-.07-1.5-.41-2.83-1.5-3.91-1.08-1.09-2.41-1.43-3.91-1.5-1.54-.07-6.16-.07-7.7 0-1.49.07-2.82.4-3.91 1.5-1.09 1.08-1.43 2.41-1.5 3.91-.07 1.54-.07 6.16 0 7.7.07 1.5.41 2.83 1.5 3.91 1.09 1.09 2.42 1.43 3.91 1.5 1.54.07 6.16.07 7.7 0 1.5-.07 2.83-.41 3.91-1.5 1.09-1.08 1.43-2.41 1.5-3.91.07-1.54.07-6.15 0-7.7Zm-2 9.35a3.3 3.3 0 0 1-1.86 1.86c-1.29.51-4.35.39-5.78.39s-4.5.11-5.78-.39a3.3 3.3 0 0 1-1.86-1.86c-.51-1.29-.39-4.35-.39-5.78s-.11-4.5.39-5.78a3.3 3.3 0 0 1 1.86-1.86c1.29-.51 4.35-.39 5.78-.39s4.5-.11 5.78.39a3.3 3.3 0 0 1 1.86 1.86c.51 1.29.39 4.35.39 5.78s.12 4.5-.39 5.78Z" />
     </svg>
   )
 }
@@ -24,7 +34,9 @@ function ViberIcon({ className }: { className?: string }) {
 
 export function Footer() {
   const { site } = useSite()
+  const { content } = useContent()
   const facebookUrl = site?.facebook_url || FACEBOOK_URL
+  const instagramUrl = content.instagram_url || INSTAGRAM_URL
   const viberNumber = site?.phone || VIBER_NUMBER
 
   return (
@@ -58,6 +70,15 @@ export function Footer() {
             >
               <FacebookIcon className="h-4 w-4" />
               Facebook
+            </a>
+            <a
+              href={instagramUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 text-muted hover:text-royal"
+            >
+              <InstagramIcon className="h-4 w-4" />
+              Instagram
             </a>
             <a
               href={toViberLink(viberNumber)}

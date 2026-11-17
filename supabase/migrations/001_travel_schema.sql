@@ -233,7 +233,7 @@ select
   'Tell us where you want to go.',
   'Share a few details and we will prepare options that fit your dates, budget, and company.',
   '@cvtravelandtours',
-  'https://instagram.com/cvtravelandtours',
+  'https://www.instagram.com/cvtravelandtours/',
   '09669887477',
   'CV Travel & Tours | A decade of trusted journeys',
   'CV Travel & Tours in Quezon City — 10 years of resort bookings, international packages, and personal travel care. Inquire for Bali, Phuket, and custom trips.'

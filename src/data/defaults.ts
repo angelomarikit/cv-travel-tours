@@ -85,7 +85,7 @@ export const DEFAULT_CONTENT: TravelContent = {
   contact_heading: 'Tell us where you want to go.',
   contact_subheading: 'Share a few details and we will prepare options that fit your dates, budget, and company.',
   instagram_handle: '@cvtravelandtours',
-  instagram_url: 'https://instagram.com/cvtravelandtours',
+  instagram_url: 'https://www.instagram.com/cvtravelandtours/',
   whatsapp_number: '09669887477',
   seo_title: 'CV Travel & Tours | A decade of trusted journeys',
   seo_description:

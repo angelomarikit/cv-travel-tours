@@ -5,7 +5,7 @@ Stack: **React + TypeScript + Vite + Tailwind + React Router + Lucide + `@supaba
 Slug: **`cv-travel-tours`**  
 Address: Studio 3, Le Grand 3, Bagumbayan, Quezon City, Philippines  
 Phone: 0966 988 7477  
-Instagram: [@cvtravelandtours](https://instagram.com/cvtravelandtours)
+Instagram: [@cvtravelandtours](https://www.instagram.com/cvtravelandtours/)
 
 Featured stays:
 

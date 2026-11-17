@@ -30,7 +30,7 @@ export default function SettingsPage() {
   const [mapsEmbed, setMapsEmbed] = useState(site?.google_maps_embed_url ?? '')
   const [mapsDirections, setMapsDirections] = useState(site?.google_maps_directions_url ?? '')
   const [instagramHandle, setInstagramHandle] = useState('@cvtravelandtours')
-  const [instagramUrl, setInstagramUrl] = useState('https://instagram.com/cvtravelandtours')
+  const [instagramUrl, setInstagramUrl] = useState('https://www.instagram.com/cvtravelandtours/')
   const [whatsappNumber, setWhatsappNumber] = useState('09669887477')
   const [contactHeading, setContactHeading] = useState('')
   const [contactSubheading, setContactSubheading] = useState('')
