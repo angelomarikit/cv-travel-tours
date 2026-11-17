@@ -48,7 +48,7 @@ export const DEFAULT_SITE: Site = {
   address: 'Studio 3, Le Grand 3, Bagumbayan, Quezon City, Philippines',
   phone: '09669887477',
   email: null,
-  facebook_url: null,
+  facebook_url: 'https://www.facebook.com/profile.php?id=61594024377319',
   messenger_url: null,
   registration_url: null,
   google_maps_embed_url:

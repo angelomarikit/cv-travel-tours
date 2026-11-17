@@ -38,7 +38,7 @@ export function Seo() {
         addressLocality: 'Quezon City',
         addressCountry: 'PH',
       },
-      sameAs: [content.instagram_url, site?.facebook_url].filter(Boolean),
+      sameAs: [site?.facebook_url || 'https://www.facebook.com/profile.php?id=61594024377319'].filter(Boolean),
     }
 
     let script = document.getElementById('cv-jsonld')

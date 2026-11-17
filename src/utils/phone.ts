@@ -9,6 +9,13 @@ export function toWhatsAppLink(phone: string | null | undefined): string {
   return `https://wa.me/${international}`
 }
 
+export function toViberLink(phone: string | null | undefined): string {
+  const digits = digitsOnly(phone)
+  if (!digits) return ''
+  const international = digits.startsWith('0') ? `63${digits.slice(1)}` : digits
+  return `viber://chat?number=%2B${international}`
+}
+
 export function formatPhoneDisplay(phone: string | null | undefined): string {
   const digits = digitsOnly(phone)
   if (digits.length === 11 && digits.startsWith('0')) {

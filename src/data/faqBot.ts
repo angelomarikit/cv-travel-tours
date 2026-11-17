@@ -54,9 +54,9 @@ const replies: Array<{ keywords: string[]; answer: string; suggestions?: string[
     suggestions: ['Contact', 'How to book'],
   },
   {
-    keywords: ['phone', 'number', 'call', 'whatsapp', 'contact', 'email', 'instagram'],
+    keywords: ['phone', 'number', 'call', 'whatsapp', 'viber', 'contact', 'email', 'facebook'],
     answer:
-      'You can reach CV Travel & Tours at 0966 988 7477. Instagram is @cvtravelandtours. The fastest way to start a booking is Plan a trip on this website.',
+      'You can reach CV Travel & Tours at 0966 988 7477 on phone, WhatsApp, or Viber. Find us on Facebook as well. The fastest way to start a booking is Plan a trip on this website.',
     suggestions: ['How to book', 'Office address'],
   },
   {
